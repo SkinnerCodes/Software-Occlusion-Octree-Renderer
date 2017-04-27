@@ -1,0 +1,174 @@
+﻿Build started 4/27/2017 7:21:20 PM.
+     1>Project "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\blockade_vs\blockade_vs.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\) contains files shared from another project (blockade_vs.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Z7 /nologo /W3 /WX- /sdl /Ox /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\\" /Fd"C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\vc140.pdb" /Gd /TP /errorReport:prompt /O2 GameBase.cpp "glm util\frustum.cpp" glm\detail\dummy.cpp glm\detail\glm.cpp main.cpp Octree\Node.cpp "Render Sys\CullFrustum.cpp" "Render Sys\VisibilitySys.cpp" "Render Sys\OctreeRenderer.cpp" "Render Sys\QuadVAO.cpp" "Render Sys\camera.cpp" "Render Sys\QuadMask\QuadMask.cpp" "Render Sys\RenderBox.cpp" "OpenGL Layer\ShaderProgram.cpp" stopwatch.cpp
+     1>cl : Command line warning D9007: '/Gm' requires '/Zi or /ZI'; option ignored
+         GameBase.cpp
+         frustum.cpp
+         dummy.cpp
+         GLM: version 0.9.6.3
+         GLM: Windows platform detected
+         GLM: Visual C++ compiler detected
+         GLM: 64 bits model
+         GLM: C++0x
+         GLM: Language extensions enabled
+         GLM: Platform independent code
+         GLM: Swizzling operators disabled, #define GLM_SWIZZLE to enable swizzle operators
+         GLM: .length() returns glm::length_t, a typedef of int following the GLSL specification
+         GLM: Core library included
+         GLM: All extensions included (not recommanded)
+         GLM: GLM_GTC_bitfield extension included
+         GLM: GLM_GTC_constants extension included
+         GLM: GLM_GTC_epsilon extension included
+         GLM: GLM_GTC_quaternion extension included
+         GLM: GLM_GTC_integer extension included
+         GLM: GLM_GTC_matrix_access extension included
+         GLM: GLM_GTC_matrix_integer extension included
+         GLM: GLM_GTC_matrix_inverse extension included
+         GLM: GLM_GTC_matrix_transform extension included
+         GLM: GLM_GTC_noise extension included
+         GLM: GLM_GTC_vec1 extension included
+         GLM: GLM_GTC_type_precision extension included
+         GLM: GLM_GTC_packing extension included
+         GLM: GLM_GTC_random extension included
+         GLM: GLM_GTC_reciprocal extension included
+         GLM: GLM_GTC_integer extension included
+         GLM: GLM_GTC_type_ptr extension included
+         GLM: GLM_GTC_ulp extension included
+         GLM: GLM_GTX_associated_min_max extension included
+         GLM: GLM_GTX_bit extension is deprecated, include GLM_GTC_bitfield and GLM_GTC_integer instead
+         GLM: GLM_GTX_closest_point extension included
+         GLM: GLM_GTX_color_space extension included
+         GLM: GLM_GTX_color_space_YCoCg extension included
+         GLM: GLM_GTX_compatibility extension included
+         GLM: GLM_GTX_component_wise extension included
+         GLM: GLM_GTX_dual_quaternion extension included
+         GLM: GLM_GTX_euler_angles extension included
+         GLM: GLM_GTX_extend extension included
+         GLM: GLM_GTX_extented_min_max extension included
+         GLM: GLM_GTX_fast_exponential extension included
+         GLM: GLM_GTX_fast_square_root extension included
+         GLM: GLM_GTX_fast_trigonometry extension included
+         GLM: GLM_GTX_optimum_pow extension included
+         GLM: GLM_GTX_gradient_paint extension included
+         GLM: GLM_GTX_handed_coordinate_space extension included
+         GLM: GLM_GTX_integer extension included
+         GLM: GLM_GTX_closest_point extension included
+         GLM: GLM_GTX_log_base extension included
+         GLM: GLM_GTX_matrix_cross_product extension included
+         GLM: GLM_GTX_matrix_interpolation extension included
+         GLM: GLM_GTX_matrix_major_storage extension included
+         GLM: GLM_GTX_matrix_operation extension included
+         GLM: GLM_GTX_vector_query extension included
+         GLM: GLM_GTX_matrix_query extension included
+         GLM: GLM_GTX_mixed_product extension included
+         GLM: GLM_GTX_quaternion extension included
+         GLM: GLM_GTX_norm extension included
+         GLM: GLM_GTX_normal extension included
+         GLM: GLM_GTX_normalize_dot extension included
+         GLM: GLM_GTX_number_precision extension included
+         GLM: GLM_GTX_orthonormalize extension included
+         GLM: GLM_GTX_projection extension included
+         GLM: GLM_GTX_perpendicular extension included
+         GLM: GLM_GTX_polar_coordinates extension included
+         GLM: GLM_GTX_raw_data extension included
+         GLM: GLM_GTX_transform extension included
+         GLM: GLM_GTX_rotate_vector extension included
+         GLM: GLM_GTX_spline extension included
+         GLM: GLM_GTX_std_based_type extension included
+         GLM: GLM_GTX_string_cast extension included
+         GLM: GLM_GTX_transform2 extension included
+         GLM: GLM_GTX_type_aligned extension included
+         GLM: GLM_GTX_vector_angle extension included
+         GLM: GLM_GTX_wrap extension included
+         glm.cpp
+         main.cpp
+         Node.cpp
+         CullFrustum.cpp
+         VisibilitySys.cpp
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\VisibilitySys.h(119): warning C4805: '|': unsafe mix of type 'int' and type 'const bool' in operation
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\VisibilitySys.h(217): warning C4102: 'childrenCode': unreferenced label
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(226): warning C4805: '|=': unsafe mix of type 'bool' and type 'int64_t' in operation
+         c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(333): note: see reference to function template instantiation 'int SoftRendering::QuadMask::isQuadFullyOccludedRaster_stamp4<8>(sseutil::bareVec4f [],sseutil::bareVec4f [],sseutil::bareVec4f [],int64_t *,sseutil::bareVec4i &)' being compiled
+         c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\VisibilitySys.h(172): note: see reference to function template instantiation 'int SoftRendering::QuadMask::isQuadFullyOccluded_stamp4<8>(SoftRendering::BorderEightLines &)' being compiled
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(226): warning C4805: '|': unsafe mix of type 'bool' and type 'int64_t' in operation
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(226): warning C4800: 'int64_t': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(300): warning C4805: '|=': unsafe mix of type 'bool' and type 'int64_t' in operation
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(300): warning C4805: '|': unsafe mix of type 'bool' and type 'int64_t' in operation
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(300): warning C4800: 'int64_t': forcing value to bool 'true' or 'false' (performance warning)
+         OctreeRenderer.cpp
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\VisibilitySys.h(119): warning C4805: '|': unsafe mix of type 'int' and type 'const bool' in operation
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\VisibilitySys.h(217): warning C4102: 'childrenCode': unreferenced label
+     1>Render Sys\OctreeRenderer.cpp(83): warning C4800: 'const Uint8': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(226): warning C4805: '|=': unsafe mix of type 'bool' and type 'int64_t' in operation
+         c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(333): note: see reference to function template instantiation 'int SoftRendering::QuadMask::isQuadFullyOccludedRaster_stamp4<8>(sseutil::bareVec4f [],sseutil::bareVec4f [],sseutil::bareVec4f [],int64_t *,sseutil::bareVec4i &)' being compiled
+         c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\VisibilitySys.h(172): note: see reference to function template instantiation 'int SoftRendering::QuadMask::isQuadFullyOccluded_stamp4<8>(SoftRendering::BorderEightLines &)' being compiled
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(226): warning C4805: '|': unsafe mix of type 'bool' and type 'int64_t' in operation
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(226): warning C4800: 'int64_t': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(300): warning C4805: '|=': unsafe mix of type 'bool' and type 'int64_t' in operation
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(300): warning C4805: '|': unsafe mix of type 'bool' and type 'int64_t' in operation
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(300): warning C4800: 'int64_t': forcing value to bool 'true' or 'false' (performance warning)
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\memory(1636): warning C4316: 'std::tuple<void (__cdecl *)(VisibilitySys::GenData *,Octree::Node &,glm::vec3,glm::vec3),VisibilitySys::GenData *,Octree::Node,glm::tvec3<float,0>,glm::tvec3<float,0>>': object allocated on the heap may not be aligned 32
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\thread(50): note: see reference to function template instantiation 'std::unique_ptr<std::tuple<void (__cdecl *)(VisibilitySys::GenData *,Octree::Node &,glm::vec3,glm::vec3),VisibilitySys::GenData *,Octree::Node,glm::tvec3<float,0>,glm::tvec3<float,0>>,std::default_delete<std::tuple<void (__cdecl *)(VisibilitySys::GenData *,Octree::Node &,glm::vec3,glm::vec3),VisibilitySys::GenData *,Octree::Node,glm::tvec3<float,0>,glm::tvec3<float,0>>>> std::make_unique<std::tuple<void (__cdecl *)(VisibilitySys::GenData *,Octree::Node &,glm::vec3,glm::vec3),VisibilitySys::GenData *,Octree::Node,glm::tvec3<float,0>,glm::tvec3<float,0>>,void(__cdecl &)(VisibilitySys::GenData *,Octree::Node &,glm::vec3,glm::vec3),_Ty,Octree::Node&,glm::vec3&,glm::vec3&>(void (__cdecl &)(VisibilitySys::GenData *,Octree::Node &,glm::vec3,glm::vec3),_Ty &&,Octree::Node &,glm::vec3 &,glm::vec3 &)' being compiled
+                 with
+                 [
+                     _Ty=VisibilitySys::GenData *
+                 ]
+         Render Sys\OctreeRenderer.cpp(120): note: see reference to function template instantiation 'std::thread::thread<void(__cdecl &)(VisibilitySys::GenData *,Octree::Node &,glm::vec3,glm::vec3),VisibilitySys::GenData*,Octree::Node&,glm::vec3&,glm::vec3&,void>(_Fn,VisibilitySys::GenData *&&,Octree::Node &,glm::vec3 &,glm::vec3 &)' being compiled
+                 with
+                 [
+                     _Fn=void (__cdecl &)(VisibilitySys::GenData *,Octree::Node &,glm::vec3,glm::vec3)
+                 ]
+         QuadVAO.cpp
+     1>Render Sys\QuadVAO.cpp(64): warning C4312: 'type cast': conversion from 'int' to 'void *' of greater size
+     1>Render Sys\QuadVAO.cpp(65): warning C4312: 'type cast': conversion from 'int' to 'void *' of greater size
+     1>Render Sys\QuadVAO.cpp(66): warning C4312: 'type cast': conversion from 'int' to 'void *' of greater size
+     1>Render Sys\QuadVAO.cpp(67): warning C4312: 'type cast': conversion from 'int' to 'void *' of greater size
+     1>Render Sys\QuadVAO.cpp(68): warning C4312: 'type cast': conversion from 'int' to 'void *' of greater size
+     1>Render Sys\QuadVAO.cpp(90): warning C4244: 'initializing': conversion from 'uintptr_t' to 'int', possible loss of data
+     1>Render Sys\QuadVAO.cpp(115): warning C4244: 'initializing': conversion from 'uintptr_t' to 'int', possible loss of data
+     1>Render Sys\QuadVAO.cpp(164): warning C4312: 'type cast': conversion from 'int' to 'void *' of greater size
+     1>Render Sys\QuadVAO.cpp(181): warning C4312: 'type cast': conversion from 'int' to 'void *' of greater size
+         camera.cpp
+         QuadMask.cpp
+     1>Render Sys\QuadMask\QuadMask.cpp(27): warning C4018: '<': signed/unsigned mismatch
+     1>Render Sys\QuadMask\QuadMask.cpp(29): warning C4018: '<': signed/unsigned mismatch
+     1>Render Sys\QuadMask\QuadMask.cpp(48): warning C4018: '<': signed/unsigned mismatch
+     1>Render Sys\QuadMask\QuadMask.cpp(72): warning C4018: '<': signed/unsigned mismatch
+     1>Render Sys\QuadMask\QuadMask.cpp(73): warning C4018: '<': signed/unsigned mismatch
+         RenderBox.cpp
+         ShaderProgram.cpp
+         stopwatch.cpp
+     1>stopwatch.cpp(17): warning C4244: 'return': conversion from 'float' to '__int64', possible loss of data
+         Generating Code...
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\renderbox.cpp(300): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\renderbox.cpp(387): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\visibilitysys.h(310): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\renderbox.h(39): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+     1>c:\users\blaza\documents\github showcase projects\software occlusion culling with octree renderer\blockade_vs\render sys\visibilitysys.h(71): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\x64\releaseDBG\VoxelRenderer project.exe" /INCREMENTAL:NO /NOLOGO SDL2.lib SDL2main.lib glew32.lib opengl32.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\x64\releaseDBG\VoxelRenderer project.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\x64\releaseDBG\VoxelRenderer project.lib" /MACHINE:X64 "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\GameBase.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\frustum.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\dummy.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\glm.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\main.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\Node.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\CullFrustum.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\VisibilitySys.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\OctreeRenderer.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\QuadVAO.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\camera.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\QuadMask.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\RenderBox.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\ShaderProgram.obj"
+         "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\\interim\x64\releaseDBG\stopwatch.obj"
+         libs\SDL2.lib
+         libs\SDL2main.lib
+     1>LIBCMTD.lib(initializers.obj) : warning LNK4098: defaultlib 'libcmt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+         blockade_vs.vcxproj -> C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\x64\releaseDBG\VoxelRenderer project.exe
+     1>Done Building Project "C:\Users\blaza\Documents\github showcase projects\Software Occlusion Culling with Octree Renderer\blockade_vs\blockade_vs.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:26.64

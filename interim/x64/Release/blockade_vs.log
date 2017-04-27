@@ -1,0 +1,57 @@
+﻿Build started 4/20/2016 11:28:50 PM.
+     1>Project "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\blockade_vs\blockade_vs.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /nologo /W3 /WX- /sdl /Ox /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\\" /Fd"C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt /O2 "Render Sys\OctreeRenderer.cpp"
+     1>cl : Command line warning D9007: '/Gm' requires '/Zi or /ZI'; option ignored
+         OctreeRenderer.cpp
+     1>c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\LayerGen.h(119): warning C4805: '|': unsafe mix of type 'int' and type 'const bool' in operation
+     1>c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\LayerGen.h(217): warning C4102: 'childrenCode': unreferenced label
+     1>Render Sys\OctreeRenderer.cpp(93): warning C4800: 'const Uint8': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(226): warning C4805: '|=': unsafe mix of type 'bool' and type 'int64_t' in operation
+         c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(333): note: see reference to function template instantiation 'int SoftRendering::QuadMask::isQuadFullyOccludedRaster_stamp4<8>(sseutil::bareVec4f [],sseutil::bareVec4f [],sseutil::bareVec4f [],int64_t *,sseutil::bareVec4i &)' being compiled
+         c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\LayerGen.h(172): note: see reference to function template instantiation 'int SoftRendering::QuadMask::isQuadFullyOccluded_stamp4<8>(SoftRendering::BorderEightLines &)' being compiled
+     1>c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(226): warning C4805: '|': unsafe mix of type 'bool' and type 'int64_t' in operation
+     1>c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(226): warning C4800: 'int64_t': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(300): warning C4805: '|=': unsafe mix of type 'bool' and type 'int64_t' in operation
+     1>c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(300): warning C4805: '|': unsafe mix of type 'bool' and type 'int64_t' in operation
+     1>c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\quadmask\QuadMask_stamp4.h(300): warning C4800: 'int64_t': forcing value to bool 'true' or 'false' (performance warning)
+     1>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\memory(1636): warning C4316: 'std::tuple<void (__cdecl *)(LayerGen::GenData *,Octree::Node &,glm::vec3,glm::vec3),LayerGen::GenData *,Octree::Node,glm::tvec3<float,0>,glm::tvec3<float,0>>': object allocated on the heap may not be aligned 32
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\thread(50): note: see reference to function template instantiation 'std::unique_ptr<std::tuple<void (__cdecl *)(LayerGen::GenData *,Octree::Node &,glm::vec3,glm::vec3),LayerGen::GenData *,Octree::Node,glm::tvec3<float,0>,glm::tvec3<float,0>>,std::default_delete<std::tuple<void (__cdecl *)(LayerGen::GenData *,Octree::Node &,glm::vec3,glm::vec3),LayerGen::GenData *,Octree::Node,glm::tvec3<float,0>,glm::tvec3<float,0>>>> std::make_unique<std::tuple<void (__cdecl *)(LayerGen::GenData *,Octree::Node &,glm::vec3,glm::vec3),LayerGen::GenData *,Octree::Node,glm::tvec3<float,0>,glm::tvec3<float,0>>,void(__cdecl &)(LayerGen::GenData *,Octree::Node &,glm::vec3,glm::vec3),_Ty,Octree::Node&,glm::vec3&,glm::vec3&>(void (__cdecl &)(LayerGen::GenData *,Octree::Node &,glm::vec3,glm::vec3),_Ty &&,Octree::Node &,glm::vec3 &,glm::vec3 &)' being compiled
+                 with
+                 [
+                     _Ty=LayerGen::GenData *
+                 ]
+         Render Sys\OctreeRenderer.cpp(130): note: see reference to function template instantiation 'std::thread::thread<void(__cdecl &)(LayerGen::GenData *,Octree::Node &,glm::vec3,glm::vec3),LayerGen::GenData*,Octree::Node&,glm::vec3&,glm::vec3&,void>(_Fn,LayerGen::GenData *&&,Octree::Node &,glm::vec3 &,glm::vec3 &)' being compiled
+                 with
+                 [
+                     _Fn=void (__cdecl &)(LayerGen::GenData *,Octree::Node &,glm::vec3,glm::vec3)
+                 ]
+     1>c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\layergen.h(310): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+     1>c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\renderbox.h(39): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+     1>c:\users\blaza\documents\projects\blockadevs - copy\blockade_vs\render sys\layergen.h(74): warning C4752: found Intel(R) Advanced Vector Extensions; consider using /arch:AVX
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\x64\Release\blockade_vs.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib glew32.lib opengl32.lib SDL2_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\x64\Release\blockade_vs.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\x64\Release\blockade_vs.lib" /MACHINE:X64 "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\GameBase.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\frustum.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\dummy.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\glm.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\main.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\Node.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\CullFrustum.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\LayerGen.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\OctreeRenderer.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\QuadVAO.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\camera.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\QuadMask.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\RenderBox.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\ShaderProgram.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\stopwatch.obj"
+         "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\\interim\x64\Release\trial.obj"
+         libs\SDL2.lib
+         libs\SDL2main.lib
+     1>MSVCRTD.lib(initializers.obj) : warning LNK4098: defaultlib 'libcmt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+         blockade_vs.vcxproj -> C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\x64\Release\blockade_vs.exe
+     1>Done Building Project "C:\Users\blaza\Documents\Projects\BlockadeVS - Copy\blockade_vs\blockade_vs.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.83

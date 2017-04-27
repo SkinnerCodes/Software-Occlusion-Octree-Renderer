@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ED4AB99B-C5F2-41A8-8AA4-BB4407A80210}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BlockadeVS</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Thomas\Projects\BlockadeVS\BlockadeVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Thomas\Projects\BlockadeVS\BlockadeVS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowIncludes>true</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BloackadeBase.h" />
+    <ClInclude Include="Eigen\src\Cholesky\LDLT.h" />
+    <ClInclude Include="Eigen\src\Cholesky\LLT.h" />
+    <ClInclude Include="Eigen\src\Cholesky\LLT_MKL.h" />
+    <ClInclude Include="Eigen\src\CholmodSupport\CholmodSupport.h" />
+    <ClInclude Include="Eigen\src\Core\arch\AltiVec\Complex.h" />
+    <ClInclude Include="Eigen\src\Core\arch\AltiVec\PacketMath.h" />
+    <ClInclude Include="Eigen\src\Core\arch\Default\Settings.h" />
+    <ClInclude Include="Eigen\src\Core\arch\NEON\Complex.h" />
+    <ClInclude Include="Eigen\src\Core\arch\NEON\PacketMath.h" />
+    <ClInclude Include="Eigen\src\Core\arch\SSE\Complex.h" />
+    <ClInclude Include="Eigen\src\Core\arch\SSE\MathFunctions.h" />
+    <ClInclude Include="Eigen\src\Core\arch\SSE\PacketMath.h" />
+    <ClInclude Include="Eigen\src\Core\Array.h" />
+    <ClInclude Include="Eigen\src\Core\ArrayBase.h" />
+    <ClInclude Include="Eigen\src\Core\ArrayWrapper.h" />
+    <ClInclude Include="Eigen\src\Core\Assign.h" />
+    <ClInclude Include="Eigen\src\Core\Assign_MKL.h" />
+    <ClInclude Include="Eigen\src\Core\BandMatrix.h" />
+    <ClInclude Include="Eigen\src\Core\Block.h" />
+    <ClInclude Include="Eigen\src\Core\BooleanRedux.h" />
+    <ClInclude Include="Eigen\src\Core\CommaInitializer.h" />
+    <ClInclude Include="Eigen\src\Core\CoreIterators.h" />
+    <ClInclude Include="Eigen\src\Core\CwiseBinaryOp.h" />
+    <ClInclude Include="Eigen\src\Core\CwiseNullaryOp.h" />
+    <ClInclude Include="Eigen\src\Core\CwiseUnaryOp.h" />
+    <ClInclude Include="Eigen\src\Core\CwiseUnaryView.h" />
+    <ClInclude Include="Eigen\src\Core\DenseBase.h" />
+    <ClInclude Include="Eigen\src\Core\DenseCoeffsBase.h" />
+    <ClInclude Include="Eigen\src\Core\DenseStorage.h" />
+    <ClInclude Include="Eigen\src\Core\Diagonal.h" />
+    <ClInclude Include="Eigen\src\Core\DiagonalMatrix.h" />
+    <ClInclude Include="Eigen\src\Core\DiagonalProduct.h" />
+    <ClInclude Include="Eigen\src\Core\Dot.h" />
+    <ClInclude Include="Eigen\src\Core\EigenBase.h" />
+    <ClInclude Include="Eigen\src\Core\Flagged.h" />
+    <ClInclude Include="Eigen\src\Core\ForceAlignedAccess.h" />
+    <ClInclude Include="Eigen\src\Core\Functors.h" />
+    <ClInclude Include="Eigen\src\Core\Fuzzy.h" />
+    <ClInclude Include="Eigen\src\Core\GeneralProduct.h" />
+    <ClInclude Include="Eigen\src\Core\GenericPacketMath.h" />
+    <ClInclude Include="Eigen\src\Core\GlobalFunctions.h" />
+    <ClInclude Include="Eigen\src\Core\IO.h" />
+    <ClInclude Include="Eigen\src\Core\Map.h" />
+    <ClInclude Include="Eigen\src\Core\MapBase.h" />
+    <ClInclude Include="Eigen\src\Core\MathFunctions.h" />
+    <ClInclude Include="Eigen\src\Core\Matrix.h" />
+    <ClInclude Include="Eigen\src\Core\MatrixBase.h" />
+    <ClInclude Include="Eigen\src\Core\NestByValue.h" />
+    <ClInclude Include="Eigen\src\Core\NoAlias.h" />
+    <ClInclude Include="Eigen\src\Core\NumTraits.h" />
+    <ClInclude Include="Eigen\src\Core\PermutationMatrix.h" />
+    <ClInclude Include="Eigen\src\Core\PlainObjectBase.h" />
+    <ClInclude Include="Eigen\src\Core\ProductBase.h" />
+    <ClInclude Include="Eigen\src\Core\products\CoeffBasedProduct.h" />
+    <ClInclude Include="Eigen\src\Core\products\GeneralBlockPanelKernel.h" />
+    <ClInclude Include="Eigen\src\Core\products\GeneralMatrixMatrix.h" />
+    <ClInclude Include="Eigen\src\Core\products\GeneralMatrixMatrixTriangular.h" />
+    <ClInclude Include="Eigen\src\Core\products\GeneralMatrixMatrixTriangular_MKL.h" />
+    <ClInclude Include="Eigen\src\Core\products\GeneralMatrixMatrix_MKL.h" />
+    <ClInclude Include="Eigen\src\Core\products\GeneralMatrixVector.h" />
+    <ClInclude Include="Eigen\src\Core\products\GeneralMatrixVector_MKL.h" />
+    <ClInclude Include="Eigen\src\Core\products\Parallelizer.h" />
+    <ClInclude Include="Eigen\src\Core\products\SelfadjointMatrixMatrix.h" />
+    <ClInclude Include="Eigen\src\Core\products\SelfadjointMatrixMatrix_MKL.h" />
+    <ClInclude Include="Eigen\src\Core\products\SelfadjointMatrixVector.h" />
+    <ClInclude Include="Eigen\src\Core\products\SelfadjointMatrixVector_MKL.h" />
+    <ClInclude Include="Eigen\src\Core\products\SelfadjointProduct.h" />
+    <ClInclude Include="Eigen\src\Core\products\SelfadjointRank2Update.h" />
+    <ClInclude Include="Eigen\src\Core\products\TriangularMatrixMatrix.h" />
+    <ClInclude Include="Eigen\src\Core\products\TriangularMatrixMatrix_MKL.h" />
+    <ClInclude Include="Eigen\src\Core\products\TriangularMatrixVector.h" />
+    <ClInclude Include="Eigen\src\Core\products\TriangularMatrixVector_MKL.h" />
+    <ClInclude Include="Eigen\src\Core\products\TriangularSolverMatrix.h" />
+    <ClInclude Include="Eigen\src\Core\products\TriangularSolverMatrix_MKL.h" />
+    <ClInclude Include="Eigen\src\Core\products\TriangularSolverVector.h" />
+    <ClInclude Include="Eigen\src\Core\Random.h" />
+    <ClInclude Include="Eigen\src\Core\Redux.h" />
+    <ClInclude Include="Eigen\src\Core\Ref.h" />
+    <ClInclude Include="Eigen\src\Core\Replicate.h" />
+    <ClInclude Include="Eigen\src\Core\ReturnByValue.h" />
+    <ClInclude Include="Eigen\src\Core\Reverse.h" />
+    <ClInclude Include="Eigen\src\Core\Select.h" />
+    <ClInclude Include="Eigen\src\Core\SelfAdjointView.h" />
+    <ClInclude Include="Eigen\src\Core\SelfCwiseBinaryOp.h" />
+    <ClInclude Include="Eigen\src\Core\SolveTriangular.h" />
+    <ClInclude Include="Eigen\src\Core\StableNorm.h" />
+    <ClInclude Include="Eigen\src\Core\Stride.h" />
+    <ClInclude Include="Eigen\src\Core\Swap.h" />
+    <ClInclude Include="Eigen\src\Core\Transpose.h" />
+    <ClInclude Include="Eigen\src\Core\Transpositions.h" />
+    <ClInclude Include="Eigen\src\Core\TriangularMatrix.h" />
+    <ClInclude Include="Eigen\src\Core\util\BlasUtil.h" />
+    <ClInclude Include="Eigen\src\Core\util\Constants.h" />
+    <ClInclude Include="Eigen\src\Core\util\DisableStupidWarnings.h" />
+    <ClInclude Include="Eigen\src\Core\util\ForwardDeclarations.h" />
+    <ClInclude Include="Eigen\src\Core\util\Macros.h" />
+    <ClInclude Include="Eigen\src\Core\util\Memory.h" />
+    <ClInclude Include="Eigen\src\Core\util\Meta.h" />
+    <ClInclude Include="Eigen\src\Core\util\MKL_support.h" />
+    <ClInclude Include="Eigen\src\Core\util\NonMPL2.h" />
+    <ClInclude Include="Eigen\src\Core\util\ReenableStupidWarnings.h" />
+    <ClInclude Include="Eigen\src\Core\util\StaticAssert.h" />
+    <ClInclude Include="Eigen\src\Core\util\XprHelper.h" />
+    <ClInclude Include="Eigen\src\Core\VectorBlock.h" />
+    <ClInclude Include="Eigen\src\Core\VectorwiseOp.h" />
+    <ClInclude Include="Eigen\src\Core\Visitor.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Block.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Cwise.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\CwiseOperators.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Geometry\AlignedBox.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Geometry\All.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Geometry\AngleAxis.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Geometry\Hyperplane.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Geometry\ParametrizedLine.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Geometry\Quaternion.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Geometry\Rotation2D.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Geometry\RotationBase.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Geometry\Scaling.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Geometry\Transform.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Geometry\Translation.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Lazy.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\LeastSquares.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\LU.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Macros.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\MathFunctions.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Memory.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Meta.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\Minor.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\QR.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\SVD.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\TriangularSolver.h" />
+    <ClInclude Include="Eigen\src\Eigen2Support\VectorBlock.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\ComplexEigenSolver.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\ComplexSchur.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\ComplexSchur_MKL.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\EigenSolver.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\GeneralizedEigenSolver.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\GeneralizedSelfAdjointEigenSolver.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\HessenbergDecomposition.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\MatrixBaseEigenvalues.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\RealQZ.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\RealSchur.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\RealSchur_MKL.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\SelfAdjointEigenSolver.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\SelfAdjointEigenSolver_MKL.h" />
+    <ClInclude Include="Eigen\src\Eigenvalues\Tridiagonalization.h" />
+    <ClInclude Include="Eigen\src\Geometry\AlignedBox.h" />
+    <ClInclude Include="Eigen\src\Geometry\AngleAxis.h" />
+    <ClInclude Include="Eigen\src\Geometry\arch\Geometry_SSE.h" />
+    <ClInclude Include="Eigen\src\Geometry\EulerAngles.h" />
+    <ClInclude Include="Eigen\src\Geometry\Homogeneous.h" />
+    <ClInclude Include="Eigen\src\Geometry\Hyperplane.h" />
+    <ClInclude Include="Eigen\src\Geometry\OrthoMethods.h" />
+    <ClInclude Include="Eigen\src\Geometry\ParametrizedLine.h" />
+    <ClInclude Include="Eigen\src\Geometry\Quaternion.h" />
+    <ClInclude Include="Eigen\src\Geometry\Rotation2D.h" />
+    <ClInclude Include="Eigen\src\Geometry\RotationBase.h" />
+    <ClInclude Include="Eigen\src\Geometry\Scaling.h" />
+    <ClInclude Include="Eigen\src\Geometry\Transform.h" />
+    <ClInclude Include="Eigen\src\Geometry\Translation.h" />
+    <ClInclude Include="Eigen\src\Geometry\Umeyama.h" />
+    <ClInclude Include="Eigen\src\Householder\BlockHouseholder.h" />
+    <ClInclude Include="Eigen\src\Householder\Householder.h" />
+    <ClInclude Include="Eigen\src\Householder\HouseholderSequence.h" />
+    <ClInclude Include="Eigen\src\IterativeLinearSolvers\BasicPreconditioners.h" />
+    <ClInclude Include="Eigen\src\IterativeLinearSolvers\BiCGSTAB.h" />
+    <ClInclude Include="Eigen\src\IterativeLinearSolvers\ConjugateGradient.h" />
+    <ClInclude Include="Eigen\src\IterativeLinearSolvers\IncompleteLUT.h" />
+    <ClInclude Include="Eigen\src\IterativeLinearSolvers\IterativeSolverBase.h" />
+    <ClInclude Include="Eigen\src\Jacobi\Jacobi.h" />
+    <ClInclude Include="Eigen\src\LU\arch\Inverse_SSE.h" />
+    <ClInclude Include="Eigen\src\LU\Determinant.h" />
+    <ClInclude Include="Eigen\src\LU\FullPivLU.h" />
+    <ClInclude Include="Eigen\src\LU\Inverse.h" />
+    <ClInclude Include="Eigen\src\LU\PartialPivLU.h" />
+    <ClInclude Include="Eigen\src\LU\PartialPivLU_MKL.h" />
+    <ClInclude Include="Eigen\src\MetisSupport\MetisSupport.h" />
+    <ClInclude Include="Eigen\src\misc\blas.h" />
+    <ClInclude Include="Eigen\src\misc\Image.h" />
+    <ClInclude Include="Eigen\src\misc\Kernel.h" />
+    <ClInclude Include="Eigen\src\misc\Solve.h" />
+    <ClInclude Include="Eigen\src\misc\SparseSolve.h" />
+    <ClInclude Include="Eigen\src\OrderingMethods\Amd.h" />
+    <ClInclude Include="Eigen\src\OrderingMethods\Eigen_Colamd.h" />
+    <ClInclude Include="Eigen\src\OrderingMethods\Ordering.h" />
+    <ClInclude Include="Eigen\src\PardisoSupport\PardisoSupport.h" />
+    <ClInclude Include="Eigen\src\PaStiXSupport\PaStiXSupport.h" />
+    <ClInclude Include="Eigen\src\plugins\ArrayCwiseBinaryOps.h" />
+    <ClInclude Include="Eigen\src\plugins\ArrayCwiseUnaryOps.h" />
+    <ClInclude Include="Eigen\src\plugins\BlockMethods.h" />
+    <ClInclude Include="Eigen\src\plugins\CommonCwiseBinaryOps.h" />
+    <ClInclude Include="Eigen\src\plugins\CommonCwiseUnaryOps.h" />
+    <ClInclude Include="Eigen\src\plugins\MatrixCwiseBinaryOps.h" />
+    <ClInclude Include="Eigen\src\plugins\MatrixCwiseUnaryOps.h" />
+    <ClInclude Include="Eigen\src\QR\ColPivHouseholderQR.h" />
+    <ClInclude Include="Eigen\src\QR\ColPivHouseholderQR_MKL.h" />
+    <ClInclude Include="Eigen\src\QR\FullPivHouseholderQR.h" />
+    <ClInclude Include="Eigen\src\QR\HouseholderQR.h" />
+    <ClInclude Include="Eigen\src\QR\HouseholderQR_MKL.h" />
+    <ClInclude Include="Eigen\src\SparseCholesky\SimplicialCholesky.h" />
+    <ClInclude Include="Eigen\src\SparseCholesky\SimplicialCholesky_impl.h" />
+    <ClInclude Include="Eigen\src\SparseCore\AmbiVector.h" />
+    <ClInclude Include="Eigen\src\SparseCore\CompressedStorage.h" />
+    <ClInclude Include="Eigen\src\SparseCore\ConservativeSparseSparseProduct.h" />
+    <ClInclude Include="Eigen\src\SparseCore\MappedSparseMatrix.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseBlock.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseColEtree.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseCwiseBinaryOp.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseCwiseUnaryOp.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseDenseProduct.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseDiagonalProduct.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseDot.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseFuzzy.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseMatrix.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseMatrixBase.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparsePermutation.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseProduct.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseRedux.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseSelfAdjointView.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseSparseProductWithPruning.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseTranspose.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseTriangularView.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseUtil.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseVector.h" />
+    <ClInclude Include="Eigen\src\SparseCore\SparseView.h" />
+    <ClInclude Include="Eigen\src\SparseCore\TriangularSolver.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLUImpl.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_column_bmod.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_column_dfs.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_copy_to_ucol.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_gemm_kernel.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_heap_relax_snode.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_kernel_bmod.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_Memory.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_panel_bmod.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_panel_dfs.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_pivotL.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_pruneL.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_relax_snode.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_Structs.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_SupernodalMatrix.h" />
+    <ClInclude Include="Eigen\src\SparseLU\SparseLU_Utils.h" />
+    <ClInclude Include="Eigen\src\SparseQR\SparseQR.h" />
+    <ClInclude Include="Eigen\src\SPQRSupport\SuiteSparseQRSupport.h" />
+    <ClInclude Include="Eigen\src\StlSupport\details.h" />
+    <ClInclude Include="Eigen\src\StlSupport\StdDeque.h" />
+    <ClInclude Include="Eigen\src\StlSupport\StdList.h" />
+    <ClInclude Include="Eigen\src\StlSupport\StdVector.h" />
+    <ClInclude Include="Eigen\src\SuperLUSupport\SuperLUSupport.h" />
+    <ClInclude Include="Eigen\src\SVD\JacobiSVD.h" />
+    <ClInclude Include="Eigen\src\SVD\JacobiSVD_MKL.h" />
+    <ClInclude Include="Eigen\src\SVD\UpperBidiagonalization.h" />
+    <ClInclude Include="Eigen\src\UmfPackSupport\UmfPackSupport.h" />
+    <ClInclude Include="glm\common.hpp" />
+    <ClInclude Include="glm\detail\func_common.hpp" />
+    <ClInclude Include="glm\detail\func_exponential.hpp" />
+    <ClInclude Include="glm\detail\func_geometric.hpp" />
+    <ClInclude Include="glm\detail\func_integer.hpp" />
+    <ClInclude Include="glm\detail\func_matrix.hpp" />
+    <ClInclude Include="glm\detail\func_noise.hpp" />
+    <ClInclude Include="glm\detail\func_packing.hpp" />
+    <ClInclude Include="glm\detail\func_trigonometric.hpp" />
+    <ClInclude Include="glm\detail\func_vector_relational.hpp" />
+    <ClInclude Include="glm\detail\intrinsic_common.hpp" />
+    <ClInclude Include="glm\detail\intrinsic_exponential.hpp" />
+    <ClInclude Include="glm\detail\intrinsic_geometric.hpp" />
+    <ClInclude Include="glm\detail\intrinsic_integer.hpp" />
+    <ClInclude Include="glm\detail\intrinsic_matrix.hpp" />
+    <ClInclude Include="glm\detail\intrinsic_trigonometric.hpp" />
+    <ClInclude Include="glm\detail\intrinsic_vector_relational.hpp" />
+    <ClInclude Include="glm\detail\precision.hpp" />
+    <ClInclude Include="glm\detail\setup.hpp" />
+    <ClInclude Include="glm\detail\type_float.hpp" />
+    <ClInclude Include="glm\detail\type_gentype.hpp" />
+    <ClInclude Include="glm\detail\type_half.hpp" />
+    <ClInclude Include="glm\detail\type_int.hpp" />
+    <ClInclude Include="glm\detail\type_mat.hpp" />
+    <ClInclude Include="glm\detail\type_mat2x2.hpp" />
+    <ClInclude Include="glm\detail\type_mat2x3.hpp" />
+    <ClInclude Include="glm\detail\type_mat2x4.hpp" />
+    <ClInclude Include="glm\detail\type_mat3x2.hpp" />
+    <ClInclude Include="glm\detail\type_mat3x3.hpp" />
+    <ClInclude Include="glm\detail\type_mat3x4.hpp" />
+    <ClInclude Include="glm\detail\type_mat4x2.hpp" />
+    <ClInclude Include="glm\detail\type_mat4x3.hpp" />
+    <ClInclude Include="glm\detail\type_mat4x4.hpp" />
+    <ClInclude Include="glm\detail\type_vec.hpp" />
+    <ClInclude Include="glm\detail\type_vec1.hpp" />
+    <ClInclude Include="glm\detail\type_vec2.hpp" />
+    <ClInclude Include="glm\detail\type_vec3.hpp" />
+    <ClInclude Include="glm\detail\type_vec4.hpp" />
+    <ClInclude Include="glm\detail\_features.hpp" />
+    <ClInclude Include="glm\detail\_fixes.hpp" />
+    <ClInclude Include="glm\detail\_noise.hpp" />
+    <ClInclude Include="glm\detail\_swizzle.hpp" />
+    <ClInclude Include="glm\detail\_swizzle_func.hpp" />
+    <ClInclude Include="glm\detail\_vectorize.hpp" />
+    <ClInclude Include="glm\exponential.hpp" />
+    <ClInclude Include="glm\ext.hpp" />
+    <ClInclude Include="glm\fwd.hpp" />
+    <ClInclude Include="glm\geometric.hpp" />
+    <ClInclude Include="glm\glm.hpp" />
+    <ClInclude Include="glm\gtc\bitfield.hpp" />
+    <ClInclude Include="glm\gtc\constants.hpp" />
+    <ClInclude Include="glm\gtc\epsilon.hpp" />
+    <ClInclude Include="glm\gtc\integer.hpp" />
+    <ClInclude Include="glm\gtc\matrix_access.hpp" />
+    <ClInclude Include="glm\gtc\matrix_integer.hpp" />
+    <ClInclude Include="glm\gtc\matrix_inverse.hpp" />
+    <ClInclude Include="glm\gtc\matrix_transform.hpp" />
+    <ClInclude Include="glm\gtc\noise.hpp" />
+    <ClInclude Include="glm\gtc\packing.hpp" />
+    <ClInclude Include="glm\gtc\quaternion.hpp" />
+    <ClInclude Include="glm\gtc\random.hpp" />
+    <ClInclude Include="glm\gtc\reciprocal.hpp" />
+    <ClInclude Include="glm\gtc\round.hpp" />
+    <ClInclude Include="glm\gtc\type_precision.hpp" />
+    <ClInclude Include="glm\gtc\type_ptr.hpp" />
+    <ClInclude Include="glm\gtc\ulp.hpp" />
+    <ClInclude Include="glm\gtc\vec1.hpp" />
+    <ClInclude Include="glm\gtx\associated_min_max.hpp" />
+    <ClInclude Include="glm\gtx\bit.hpp" />
+    <ClInclude Include="glm\gtx\closest_point.hpp" />
+    <ClInclude Include="glm\gtx\color_space.hpp" />
+    <ClInclude Include="glm\gtx\color_space_YCoCg.hpp" />
+    <ClInclude Include="glm\gtx\common.hpp" />
+    <ClInclude Include="glm\gtx\compatibility.hpp" />
+    <ClInclude Include="glm\gtx\component_wise.hpp" />
+    <ClInclude Include="glm\gtx\dual_quaternion.hpp" />
+    <ClInclude Include="glm\gtx\euler_angles.hpp" />
+    <ClInclude Include="glm\gtx\extend.hpp" />
+    <ClInclude Include="glm\gtx\extented_min_max.hpp" />
+    <ClInclude Include="glm\gtx\fast_exponential.hpp" />
+    <ClInclude Include="glm\gtx\fast_square_root.hpp" />
+    <ClInclude Include="glm\gtx\fast_trigonometry.hpp" />
+    <ClInclude Include="glm\gtx\gradient_paint.hpp" />
+    <ClInclude Include="glm\gtx\handed_coordinate_space.hpp" />
+    <ClInclude Include="glm\gtx\integer.hpp" />
+    <ClInclude Include="glm\gtx\intersect.hpp" />
+    <ClInclude Include="glm\gtx\io.hpp" />
+    <ClInclude Include="glm\gtx\log_base.hpp" />
+    <ClInclude Include="glm\gtx\matrix_cross_product.hpp" />
+    <ClInclude Include="glm\gtx\matrix_decompose.hpp" />
+    <ClInclude Include="glm\gtx\matrix_interpolation.hpp" />
+    <ClInclude Include="glm\gtx\matrix_major_storage.hpp" />
+    <ClInclude Include="glm\gtx\matrix_operation.hpp" />
+    <ClInclude Include="glm\gtx\matrix_query.hpp" />
+    <ClInclude Include="glm\gtx\matrix_transform_2d.hpp" />
+    <ClInclude Include="glm\gtx\mixed_product.hpp" />
+    <ClInclude Include="glm\gtx\multiple.hpp" />
+    <ClInclude Include="glm\gtx\norm.hpp" />
+    <ClInclude Include="glm\gtx\normal.hpp" />
+    <ClInclude Include="glm\gtx\normalize_dot.hpp" />
+    <ClInclude Include="glm\gtx\number_precision.hpp" />
+    <ClInclude Include="glm\gtx\optimum_pow.hpp" />
+    <ClInclude Include="glm\gtx\orthonormalize.hpp" />
+    <ClInclude Include="glm\gtx\perpendicular.hpp" />
+    <ClInclude Include="glm\gtx\polar_coordinates.hpp" />
+    <ClInclude Include="glm\gtx\projection.hpp" />
+    <ClInclude Include="glm\gtx\quaternion.hpp" />
+    <ClInclude Include="glm\gtx\range.hpp" />
+    <ClInclude Include="glm\gtx\raw_data.hpp" />
+    <ClInclude Include="glm\gtx\rotate_normalized_axis.hpp" />
+    <ClInclude Include="glm\gtx\rotate_vector.hpp" />
+    <ClInclude Include="glm\gtx\scalar_multiplication.hpp" />
+    <ClInclude Include="glm\gtx\scalar_relational.hpp" />
+    <ClInclude Include="glm\gtx\simd_mat4.hpp" />
+    <ClInclude Include="glm\gtx\simd_quat.hpp" />
+    <ClInclude Include="glm\gtx\simd_vec4.hpp" />
+    <ClInclude Include="glm\gtx\spline.hpp" />
+    <ClInclude Include="glm\gtx\std_based_type.hpp" />
+    <ClInclude Include="glm\gtx\string_cast.hpp" />
+    <ClInclude Include="glm\gtx\transform.hpp" />
+    <ClInclude Include="glm\gtx\transform2.hpp" />
+    <ClInclude Include="glm\gtx\type_aligned.hpp" />
+    <ClInclude Include="glm\gtx\vector_angle.hpp" />
+    <ClInclude Include="glm\gtx\vector_query.hpp" />
+    <ClInclude Include="glm\gtx\wrap.hpp" />
+    <ClInclude Include="glm\integer.hpp" />
+    <ClInclude Include="glm\mat2x2.hpp" />
+    <ClInclude Include="glm\mat2x3.hpp" />
+    <ClInclude Include="glm\mat2x4.hpp" />
+    <ClInclude Include="glm\mat3x2.hpp" />
+    <ClInclude Include="glm\mat3x3.hpp" />
+    <ClInclude Include="glm\mat3x4.hpp" />
+    <ClInclude Include="glm\mat4x2.hpp" />
+    <ClInclude Include="glm\mat4x3.hpp" />
+    <ClInclude Include="glm\mat4x4.hpp" />
+    <ClInclude Include="glm\matrix.hpp" />
+    <ClInclude Include="glm\packing.hpp" />
+    <ClInclude Include="glm\trigonometric.hpp" />
+    <ClInclude Include="glm\vec2.hpp" />
+    <ClInclude Include="glm\vec3.hpp" />
+    <ClInclude Include="glm\vec4.hpp" />
+    <ClInclude Include="glm\vector_relational.hpp" />
+    <ClInclude Include="Render Sys\camera.h" />
+    <ClInclude Include="Render Sys\QuadMask.h" />
+    <ClInclude Include="Render Sys\RenderBox.h" />
+    <ClInclude Include="Utilities\avx util.h" />
+    <ClInclude Include="Utilities\sse util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glm\detail\dummy.cpp" />
+    <ClCompile Include="glm\detail\glm.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Render Sys\camera.cpp" />
+    <ClCompile Include="Render Sys\QuadMask.cpp" />
+    <ClCompile Include="Render Sys\RenderBox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Eigen\Core" />
+    <None Include="glm\detail\func_common.inl" />
+    <None Include="glm\detail\func_exponential.inl" />
+    <None Include="glm\detail\func_geometric.inl" />
+    <None Include="glm\detail\func_integer.inl" />
+    <None Include="glm\detail\func_matrix.inl" />
+    <None Include="glm\detail\func_noise.inl" />
+    <None Include="glm\detail\func_packing.inl" />
+    <None Include="glm\detail\func_trigonometric.inl" />
+    <None Include="glm\detail\func_vector_relational.inl" />
+    <None Include="glm\detail\intrinsic_common.inl" />
+    <None Include="glm\detail\intrinsic_exponential.inl" />
+    <None Include="glm\detail\intrinsic_geometric.inl" />
+    <None Include="glm\detail\intrinsic_integer.inl" />
+    <None Include="glm\detail\intrinsic_matrix.inl" />
+    <None Include="glm\detail\intrinsic_trigonometric.inl" />
+    <None Include="glm\detail\intrinsic_vector_relational.inl" />
+    <None Include="glm\detail\type_gentype.inl" />
+    <None Include="glm\detail\type_half.inl" />
+    <None Include="glm\detail\type_mat.inl" />
+    <None Include="glm\detail\type_mat2x2.inl" />
+    <None Include="glm\detail\type_mat2x3.inl" />
+    <None Include="glm\detail\type_mat2x4.inl" />
+    <None Include="glm\detail\type_mat3x2.inl" />
+    <None Include="glm\detail\type_mat3x3.inl" />
+    <None Include="glm\detail\type_mat3x4.inl" />
+    <None Include="glm\detail\type_mat4x2.inl" />
+    <None Include="glm\detail\type_mat4x3.inl" />
+    <None Include="glm\detail\type_mat4x4.inl" />
+    <None Include="glm\detail\type_vec.inl" />
+    <None Include="glm\detail\type_vec1.inl" />
+    <None Include="glm\detail\type_vec2.inl" />
+    <None Include="glm\detail\type_vec3.inl" />
+    <None Include="glm\detail\type_vec4.inl" />
+    <None Include="glm\detail\type_vec4_avx.inl" />
+    <None Include="glm\detail\type_vec4_avx2.inl" />
+    <None Include="glm\detail\type_vec4_sse2.inl" />
+    <None Include="glm\gtc\bitfield.inl" />
+    <None Include="glm\gtc\constants.inl" />
+    <None Include="glm\gtc\epsilon.inl" />
+    <None Include="glm\gtc\integer.inl" />
+    <None Include="glm\gtc\matrix_access.inl" />
+    <None Include="glm\gtc\matrix_inverse.inl" />
+    <None Include="glm\gtc\matrix_transform.inl" />
+    <None Include="glm\gtc\noise.inl" />
+    <None Include="glm\gtc\packing.inl" />
+    <None Include="glm\gtc\quaternion.inl" />
+    <None Include="glm\gtc\random.inl" />
+    <None Include="glm\gtc\reciprocal.inl" />
+    <None Include="glm\gtc\round.inl" />
+    <None Include="glm\gtc\type_precision.inl" />
+    <None Include="glm\gtc\type_ptr.inl" />
+    <None Include="glm\gtc\ulp.inl" />
+    <None Include="glm\gtc\vec1.inl" />
+    <None Include="glm\gtx\associated_min_max.inl" />
+    <None Include="glm\gtx\bit.inl" />
+    <None Include="glm\gtx\closest_point.inl" />
+    <None Include="glm\gtx\color_space.inl" />
+    <None Include="glm\gtx\color_space_YCoCg.inl" />
+    <None Include="glm\gtx\common.inl" />
+    <None Include="glm\gtx\compatibility.inl" />
+    <None Include="glm\gtx\component_wise.inl" />
+    <None Include="glm\gtx\dual_quaternion.inl" />
+    <None Include="glm\gtx\euler_angles.inl" />
+    <None Include="glm\gtx\extend.inl" />
+    <None Include="glm\gtx\extented_min_max.inl" />
+    <None Include="glm\gtx\fast_exponential.inl" />
+    <None Include="glm\gtx\fast_square_root.inl" />
+    <None Include="glm\gtx\fast_trigonometry.inl" />
+    <None Include="glm\gtx\gradient_paint.inl" />
+    <None Include="glm\gtx\handed_coordinate_space.inl" />
+    <None Include="glm\gtx\integer.inl" />
+    <None Include="glm\gtx\intersect.inl" />
+    <None Include="glm\gtx\io.inl" />
+    <None Include="glm\gtx\log_base.inl" />
+    <None Include="glm\gtx\matrix_cross_product.inl" />
+    <None Include="glm\gtx\matrix_decompose.inl" />
+    <None Include="glm\gtx\matrix_interpolation.inl" />
+    <None Include="glm\gtx\matrix_major_storage.inl" />
+    <None Include="glm\gtx\matrix_operation.inl" />
+    <None Include="glm\gtx\matrix_query.inl" />
+    <None Include="glm\gtx\matrix_transform_2d.inl" />
+    <None Include="glm\gtx\mixed_product.inl" />
+    <None Include="glm\gtx\multiple.inl" />
+    <None Include="glm\gtx\norm.inl" />
+    <None Include="glm\gtx\normal.inl" />
+    <None Include="glm\gtx\normalize_dot.inl" />
+    <None Include="glm\gtx\number_precision.inl" />
+    <None Include="glm\gtx\optimum_pow.inl" />
+    <None Include="glm\gtx\orthonormalize.inl" />
+    <None Include="glm\gtx\perpendicular.inl" />
+    <None Include="glm\gtx\polar_coordinates.inl" />
+    <None Include="glm\gtx\projection.inl" />
+    <None Include="glm\gtx\quaternion.inl" />
+    <None Include="glm\gtx\raw_data.inl" />
+    <None Include="glm\gtx\rotate_normalized_axis.inl" />
+    <None Include="glm\gtx\rotate_vector.inl" />
+    <None Include="glm\gtx\scalar_relational.inl" />
+    <None Include="glm\gtx\simd_mat4.inl" />
+    <None Include="glm\gtx\simd_quat.inl" />
+    <None Include="glm\gtx\simd_vec4.inl" />
+    <None Include="glm\gtx\spline.inl" />
+    <None Include="glm\gtx\std_based_type.inl" />
+    <None Include="glm\gtx\string_cast.inl" />
+    <None Include="glm\gtx\transform.inl" />
+    <None Include="glm\gtx\transform2.inl" />
+    <None Include="glm\gtx\type_aligned.inl" />
+    <None Include="glm\gtx\vector_angle.inl" />
+    <None Include="glm\gtx\vector_query.inl" />
+    <None Include="glm\gtx\wrap.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
